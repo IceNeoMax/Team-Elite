@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tournament Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-list no-lines>
+    <ion-item *ngFor="let tour of tours">
+      <ion-card  (click)="intoTourDetail(tour)">
+        <img [src]='tour.Src'/>
+        <div class="card-title">{{tour.Name}}</div>
+        <div class="card-subtitle">{{tour.Location}} • {{tour.Num}} Teams</div>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,44 @@
+<!--
+  Generated template for the TourDetail page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>tour-detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <img [src]='tour.Src'/>
+  <div>
+    <ion-segment [(ngModel)]="dota2">
+      <ion-segment-button  value="Description">
+        Description
+      </ion-segment-button>
+      <ion-segment-button value="Teams">
+        Teams
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="dota2">
+    <ion-list *ngSwitchCase="'Description'" padding>
+      <h6>{{tour.Des}}</h6>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Teams'" no-lines>
+      <ion-item *ngFor='let team of teamsInvolve' (click)='intoTeamDetail(team)'>
+        <ion-thumbnail item-left>
+          <img [src]='team.Src'>
+        </ion-thumbnail>
+        <h2>{{team.Name}}</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

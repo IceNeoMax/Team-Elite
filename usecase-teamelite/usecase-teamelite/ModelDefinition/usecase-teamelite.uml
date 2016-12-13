@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="959fcdce-a373-4c7f-a372-ce8f7b2e05c1"
+  name="usecase-teamelite" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="c221b39a-3050-404b-8e1f-648412e7ffd1"
+        name="Actor"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="19a37969-456c-4fe3-a73e-f9bda88c5cd6"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Read News"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="50b13c29-7e61-4e6e-8425-daa11d814583"
+              LastKnownName="Read News"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d529ab4-0c22-4808-bbbc-be03981152c7"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ea4d5c4-0a59-4704-8b99-47bcfbe5532a"
+                  name="Read News"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="515f1744-c8b5-406f-8778-d52d2b9a0f67"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Follow a Team"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d75f2a84-9f0b-42c1-a0dd-5f2a2e397db7"
+              LastKnownName="Follow a Team"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d77a73f-48ca-477d-a9b6-0d55d73644eb"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e0b2de76-f051-42de-83fd-16d37604380a"
+                  name="Follow a Team"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9767ef2a-ad38-4e1b-a65d-1b711dbaa0d9"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Watch Tournaments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="42426c34-16a7-4b88-895f-3721a94d4cbf"
+              LastKnownName="Watch Tournaments"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc1fd315-e933-4763-92dd-aa3a176bd408"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23d8b305-a2fd-4451-9c78-f26907ea591d"
+                  name="Watch Tournaments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3d4441c5-0696-4c6e-946e-fbb5f33c51a1"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Watch Top Teams"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2a15a45f-07b3-4a47-9b2e-81a3c924cc6b"
+              LastKnownName="Watch Top Teams"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94af2173-ea9a-4731-98dd-31c2c46e05c5"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42f50cf6-4ef2-473a-9bd2-414db13d5667"
+                  name="Watch Top Teams"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="50b13c29-7e61-4e6e-8425-daa11d814583"
+        name="Read News"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f6e43148-3fb2-48ed-80b2-10b38bd42f36"
+            isDerived="false"
+            sourceEndRoleName="Read News"
+            targetEndRoleName="Read a New"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ac283115-dff1-40dc-9015-f89706bfbb98"
+              LastKnownName="Read a New"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="314bd62a-9cd6-42ac-8296-a10a5ba3456e"
+                  name="Read News"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="403fdeaf-0cce-476f-b64a-0888ac17687e"
+                  name="Read a New"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ac283115-dff1-40dc-9015-f89706bfbb98"
+        name="Read a New"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d75f2a84-9f0b-42c1-a0dd-5f2a2e397db7"
+        name="Follow a Team"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6533adbd-aacf-452e-b8a6-6e2251b9d5e5"
+        name="Actor2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="42426c34-16a7-4b88-895f-3721a94d4cbf"
+        name="Watch Tournaments"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ed034768-e3e6-437d-8603-090cdf9dacff"
+            isDerived="false"
+            sourceEndRoleName="Watch Tournaments"
+            targetEndRoleName="Watch a Tounament"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="079f07d6-27f7-488b-a5eb-1bfc5d610006"
+              LastKnownName="Watch a Tounament"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d8eceff-a7a1-4cf7-83dc-4171285d3fe5"
+                  name="Watch Tournaments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6a2aef73-9a72-4df6-a13d-6cb306d66e6e"
+                  name="Watch a Tounament"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="079f07d6-27f7-488b-a5eb-1bfc5d610006"
+        name="Watch a Tounament"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a15a45f-07b3-4a47-9b2e-81a3c924cc6b"
+        name="Watch Top Teams"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

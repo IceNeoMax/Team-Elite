@@ -1,0 +1,56 @@
+<!--
+  Generated template for the TeamDetail page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>TeamDetail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+  
+    <ion-card>
+        
+      <img src="assets/img/logo.jpg" style="filter:blur(3px);"/>
+      <div class="card-title">
+        <img [src]='team.Src' style="border-radius:20px; position: relative; left: 150px; top: -30px; width: 50px;">
+        {{team.Name}}</div>
+      <div class="card-subtitle"><span style="margin-top:5px;">{{team.Add}}</span></div>
+    </ion-card>
+  
+    <ion-list no-lines>
+      <ion-item>
+        <ion-thumbnail item-left><ion-icon name="construct"></ion-icon></ion-thumbnail>
+        <h2>{{mem.Carry}}</h2>
+      </ion-item>
+        <ion-item>
+        <ion-thumbnail item-left><ion-icon name="help-buoy"></ion-icon></ion-thumbnail>
+        <h2>{{mem.Mid}}</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left><ion-icon name="medical"></ion-icon></ion-thumbnail>
+        <h2>{{mem.Support1}}</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left><ion-icon name="medical"></ion-icon></ion-thumbnail>
+        <h2>{{mem.Support2}}</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left><ion-icon name="nuclear"></ion-icon></ion-thumbnail>
+        <h2>{{mem.Offlane}}</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-fab right middle>
+      <button ion-fab color="light" (click)='changeFollow(team.id-1);'>
+        <ion-icon color="danger" name="md-heart-outline" *ngIf='!dataService.follows[team.id-1]'></ion-icon>
+        <ion-icon color="danger" name="md-heart" *ngIf='dataService.follows[team.id-1]'></ion-icon>
+      </button>
+    </ion-fab>
+</ion-content>
