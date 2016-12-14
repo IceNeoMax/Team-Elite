@@ -181,6 +181,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="1c0da385-5fca-4f89-9a36-6f4793d0e9ca"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="See Teams Followed"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8e06525a-4792-4dad-9c18-e3641aa76caf"
+              LastKnownName="See Teams Followed"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed950a62-dd6c-47cc-85e2-f5b115e4063c"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad5076c8-aa15-485f-959a-4b26725d3f93"
+                  name="See Teams Followed"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -316,6 +355,47 @@
         name="Watch Top Teams"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d0eec1b-3f29-498f-bb62-5e0930156f38"
+        name="Follow"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="07248f77-6bb8-4a38-9682-8547441f4ab7">
+            <useCaseMoniker
+              Id="2a15a45f-07b3-4a47-9b2e-81a3c924cc6b"
+              LastKnownName="Watch Top Teams"
+              LastKnownLocation="usecase-teamelite.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8e06525a-4792-4dad-9c18-e3641aa76caf"
+        name="See Teams Followed"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cf67ad49-cb22-41ec-8d2d-c3568fea9de0"
+        name="Unfollow"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0db89222-465b-4cff-ae1b-2c6c354729bf">
+            <useCaseMoniker
+              Id="8e06525a-4792-4dad-9c18-e3641aa76caf"
+              LastKnownName="See Teams Followed"
+              LastKnownLocation="usecase-teamelite.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

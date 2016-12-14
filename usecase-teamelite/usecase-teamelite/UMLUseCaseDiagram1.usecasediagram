@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6a599c86-f360-4eb4-b669-567cba882d6b" name="UMLUseCaseDiagram1" linkedPackageId="2d45b50e-0673-4bb0-b29c-2864dee78c24" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="24e25981-8ce9-4041-93f2-017c5b42a38d">
-      <profileInstance Id="8cce8655-2d59-4370-bd66-45913f08210b" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="7995a525-418f-45cd-ad0e-57b1d5fe3ee3">
-      <profileInstance Id="b395f93a-f114-4535-bf25-4b273379d42a" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="354c44fd-7806-48c9-a8f1-22765fb25ab6" name="Actor" isAbstract="false" isLeaf="false">
@@ -34,22 +20,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="19a37969-456c-4fe3-a73e-f9bda88c5cd6" />
-          </association>
-          <association Id="5e187d95-c51a-4356-8f54-278e5ae01ae4" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Follow a Team" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="d9bde772-5503-4b63-a5d1-527db39a4d56" LastKnownName="Follow a Team" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="377aadcd-3c94-4bc7-810c-19fbed39ac55" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="3d77a73f-48ca-477d-a9b6-0d55d73644eb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="bf1d918d-6345-4e27-939f-81f015d85c8f" name="Follow a Team" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="e0b2de76-f051-42de-83fd-16d37604380a" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="515f1744-c8b5-406f-8778-d52d2b9a0f67" />
           </association>
           <association Id="b61fc9eb-9aff-4413-b9a3-7f4822ee8c0d" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Watch Tournaments" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="34e44cfb-b1bf-4196-aed9-abdc48c5f525" LastKnownName="Watch Tournaments" />
@@ -83,6 +53,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="3d4441c5-0696-4c6e-946e-fbb5f33c51a1" />
           </association>
+          <association Id="525b655e-3bc6-44d3-a3f0-2d27f72a755b" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="See Teams Followed" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="77a77345-7640-4dd8-8896-de6e671045b4" LastKnownName="See Teams Followed" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3047bb6d-39f4-43f0-af61-3e6daeacc778" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ed950a62-dd6c-47cc-85e2-f5b115e4063c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d2d5de3-5657-4a48-8985-d861cc455e16" name="See Teams Followed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ad5076c8-aa15-485f-959a-4b26725d3f93" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1c0da385-5fca-4f89-9a36-6f4793d0e9ca" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -112,11 +98,6 @@
     <useCaseModelRootHasTypes>
       <useCase Id="68e99a06-6bbc-4020-bf42-35a575e9d737" name="Read a New" isAbstract="false" isLeaf="false">
         <elementDefinition Id="ac283115-dff1-40dc-9015-f89706bfbb98" />
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="d9bde772-5503-4b63-a5d1-527db39a4d56" name="Follow a Team" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="d75f2a84-9f0b-42c1-a0dd-5f2a2e397db7" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -152,8 +133,49 @@
         <elementDefinition Id="2a15a45f-07b3-4a47-9b2e-81a3c924cc6b" />
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f973f572-c9ea-49ba-96e3-0e9545830f62" name="Follow" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d0eec1b-3f29-498f-bb62-5e0930156f38" />
+        <extendedCases>
+          <extend Id="9d703be4-8d14-4756-99fb-886f10710603">
+            <useCaseMoniker Id="64c2ac8d-7c3b-4a13-a7e2-3c6cd87180bf" LastKnownName="Watch Top Teams" />
+            <elementDefinition Id="07248f77-6bb8-4a38-9682-8547441f4ab7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="77a77345-7640-4dd8-8896-de6e671045b4" name="See Teams Followed" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e06525a-4792-4dad-9c18-e3641aa76caf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b3c1ce48-933a-4aa7-933f-0150d3bd0857" name="Unfollow" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf67ad49-cb22-41ec-8d2d-c3568fea9de0" />
+        <extendedCases>
+          <extend Id="3e0db9d4-bdb6-4b0f-aa17-6eb237b62c49">
+            <useCaseMoniker Id="77a77345-7640-4dd8-8896-de6e671045b4" LastKnownName="See Teams Followed" />
+            <elementDefinition Id="0db89222-465b-4cff-ae1b-2c6c354729bf" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="2d45b50e-0673-4bb0-b29c-2864dee78c24" name="usecase-teamelite">
     <elementDefinition Id="959fcdce-a373-4c7f-a372-ce8f7b2e05c1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="24e25981-8ce9-4041-93f2-017c5b42a38d">
+        <profileInstance Id="8cce8655-2d59-4370-bd66-45913f08210b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7995a525-418f-45cd-ad0e-57b1d5fe3ee3">
+        <profileInstance Id="b395f93a-f114-4535-bf25-4b273379d42a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
