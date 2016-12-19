@@ -397,6 +397,23 @@
         </extendedCases>
       </useCase>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3d09a37-cdb7-4718-b430-72ce38dc1590"
+        name="Unfollow"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9f4c2ddb-e364-4451-8449-cd3f6d734550">
+            <useCaseMoniker
+              Id="2a15a45f-07b3-4a47-9b2e-81a3c924cc6b"
+              LastKnownName="Watch Top Teams"
+              LastKnownLocation="usecase-teamelite.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

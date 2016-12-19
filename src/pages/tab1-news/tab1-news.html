@@ -14,7 +14,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card [@flyInBottomSlow]="logoState">
+  <ion-card [@flyInBottomSlow]="logoState" (click)='inToNewDetail()'>
     <img src="assets/img/EG.jpg"/>
     <ion-card-content>
       <ion-card-title>
@@ -33,7 +33,7 @@
     </ion-card-content>
   </ion-card>
 
-<ion-card [@flyInBottomSlow]="logoState">
+<ion-card [@flyInBottomSlow]="logoState" (click)='inToNewDetail()'>
     <img src="assets/img/VP.jpg"/>
     <ion-card-content>
       <ion-card-title>

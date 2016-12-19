@@ -21749,6 +21749,13 @@ sub {
   }
 }
 
+.side-menu {
+  background: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdsXIYY_xCJJsBZM3Vc5XeAsBUzQy1KqmNlsBm2BcfKYazJP5d");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 page-team-detail ion-icon {
   font-size: 2.7em;
 }

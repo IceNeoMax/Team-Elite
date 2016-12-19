@@ -9,7 +9,7 @@
 
 <ion-content class="card-background-page">
   <ion-list no-lines>
-    <ion-item *ngFor="let tour of tours">
+    <ion-item [@zoomInUp]="teamsState" *ngFor="let tour of tours">
       <ion-card  (click)="intoTourDetail(tour)">
         <img [src]='tour.Src'/>
         <div class="card-title">{{tour.Name}}</div>

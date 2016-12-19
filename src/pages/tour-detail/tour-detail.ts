@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, trigger, state, style, transition, animate,keyframes } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Data } from '../providers/data';
 import { TeamDetailPage } from '../team-detail/team-detail';
@@ -13,12 +13,26 @@ import { TeamDetailPage } from '../team-detail/team-detail';
 @Component({
   selector: 'page-tour-detail',
   templateUrl: 'tour-detail.html',
+  animations: [
+   trigger('zoomInUp', [
+      state('in', style({
+        transform: 'rotate(360deg)'
+      })),
+      transition('void => *', [animate('1400ms ease-in',keyframes([
+        style({transform: 'perspective(400px) rotate3d(0, 1, 0, -360deg)', offset: 0}), 
+         style({transform: 'perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg)', offset: 0.4}) ,
+          style({transform: 'perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg)', offset: 0.5}),
+          style({transform: 'perspective(400px) scale3d(.95, .95, .95)', offset: 0.8}),
+          style( {transform: 'perspective(400px)', offset: 1})
+      ]))
+      ])
+    ])
+  ]
 })
 export class TourDetailPage {
 
-
+  teamsState : string = "in";
   tour: any={};
-
   teamsNum: number [];
   teamsInvolve: any =[];
 

@@ -15,7 +15,7 @@
 
 <ion-content>
 
-  <img [src]='tour.Src'/>
+  <img [@zoomInUp]="teamsState" [src]='tour.Src'/>
   <div>
     <ion-segment [(ngModel)]="dota2">
       <ion-segment-button  value="Description">

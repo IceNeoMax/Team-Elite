@@ -1,5 +1,6 @@
-import { Component, trigger, state, style, transition, animate } from '@angular/core';
+import { Component, trigger, state, style, transition, animate,keyframes } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { NewDetailPage } from '../new-detail/new-detail';
 /*
   Generated class for the Tab1Des page.
 
@@ -15,11 +16,14 @@ import { NavController } from 'ionic-angular';
         transform: 'translate3d(0,0,0)'
       })),
       transition('void => *', [
-        style({transform: 'translate3d(0,2000px,0'}),
-        animate('1500ms ease-in-out')
-      ])
+        animate('1200ms ease-in-out',keyframes([
+        style({transform: 'rotate3d(0, 0, 1, 45deg)', opacity: '0', transformOrigin: 'left bottom', offset: 0}), 
+         style( {transform: 'none', opacity: '1', transformOrigin: 'left bottom', offset: 1}) 
+          
+      ]))
     ])
-  ]
+  ])
+   ]
 
 })
 export class Tab1NewsPage {
@@ -34,6 +38,9 @@ export class Tab1NewsPage {
 
   changeStar(){
     this.star = !this.star;
+  }
+  inToNewDetail(){
+    this.navCtrl.push(NewDetailPage);
   }
 
 }

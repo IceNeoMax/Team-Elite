@@ -10,6 +10,7 @@ import { Data } from '../pages/providers/data';
 import { Tab2TeamsPage } from '../pages/tab2-teams/tab2-teams';
 import { Tab1NewsPage } from '../pages/tab1-news/tab1-news';
 import { Storage } from '@ionic/storage';
+import { NewDetailPage } from '../pages/new-detail/new-detail';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { Storage } from '@ionic/storage';
     TeamDetailPage,
     TourDetailPage,
     Tab1NewsPage,
-    Tab2TeamsPage
+    Tab2TeamsPage,
+    NewDetailPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -35,7 +37,8 @@ import { Storage } from '@ionic/storage';
    TeamDetailPage,
     TourDetailPage,
     Tab1NewsPage,
-    Tab2TeamsPage
+    Tab2TeamsPage,
+    NewDetailPage
   ],
   providers: [Data,Storage,{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

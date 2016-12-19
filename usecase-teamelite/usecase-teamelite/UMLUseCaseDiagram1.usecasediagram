@@ -160,6 +160,17 @@
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="aba459d7-b8cd-4b7a-90e1-ab9ca9d0777e" name="Unfollow" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c3d09a37-cdb7-4718-b430-72ce38dc1590" />
+        <extendedCases>
+          <extend Id="32a8f4c2-5254-41d3-8577-e1e56f7a38c3">
+            <useCaseMoniker Id="64c2ac8d-7c3b-4a13-a7e2-3c6cd87180bf" LastKnownName="Watch Top Teams" />
+            <elementDefinition Id="9f4c2ddb-e364-4451-8449-cd3f6d734550" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="2d45b50e-0673-4bb0-b29c-2864dee78c24" name="usecase-teamelite">
     <elementDefinition Id="959fcdce-a373-4c7f-a372-ce8f7b2e05c1" />
