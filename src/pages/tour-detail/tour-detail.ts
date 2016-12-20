@@ -35,9 +35,10 @@ export class TourDetailPage {
   tour: any={};
   teamsNum: number [];
   teamsInvolve: any =[];
+  dota2:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public data:Data) {
-    
+    this.dota2 = "Description";
   }
 
   ionViewDidLoad() {

@@ -32,4 +32,12 @@ export class TeamDetailPage {
     this.navCtrl.pop();
   }
 
+  doRefresh(e){
+    this.dataService.getTeam(this.team.id).then(
+      (data) =>{
+        this.mem = data.Mem;
+        e.complete();
+    })
+  }
+
 }

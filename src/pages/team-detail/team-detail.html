@@ -14,15 +14,22 @@
 
 
 <ion-content class="card-background-page">
-  
-    <ion-card>
-        
-      <img src="assets/img/logo.jpg" style="filter:blur(3px);"/>
-      <div class="card-title">
-        <img [src]='team.Src' style="border-radius:20px; position: relative; left: 150px; top: -30px; width: 50px;">
-        {{team.Name}}</div>
-      <div class="card-subtitle"><span style="margin-top:5px;">{{team.Add}}</span></div>
-    </ion-card>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content 
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingText="Refreshing...">
+      </ion-refresher-content>
+  </ion-refresher>
+
+
+  <ion-card>
+    <img src="assets/img/logo.jpg" style="filter:blur(3px);"/>
+    <div class="card-title">
+      <img [src]='team.Src' style="border-radius:20px; position: relative; left: 150px; top: -30px; width: 50px;">
+      {{team.Name}}</div>
+    <div class="card-subtitle"><span style="margin-top:5px;">{{team.Add}}</span></div>
+  </ion-card>
   
     <ion-list no-lines>
       <ion-item>

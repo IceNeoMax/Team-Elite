@@ -32,7 +32,7 @@
       <h6>{{tour.Des}}</h6>
     </ion-list>
 
-    <ion-list *ngSwitchCase="'Teams'" no-lines>
+    <ion-list *ngSwitchCase="'Teams'" no-lines padding>
       <ion-item *ngFor='let team of teamsInvolve' (click)='intoTeamDetail(team)'>
         <ion-thumbnail item-left>
           <img [src]='team.Src'>

@@ -14,32 +14,32 @@
 </ion-header>
 
 <ion-content>
-  <ion-card [@flyInBottomSlow]="logoState" (click)='inToNewDetail()'>
-    <img src="assets/img/EG.jpg"/>
+  <ion-card [@flyInBottomSlow]="logoState">
+    <img (click)='inToNewDetail()' src="assets/img/journey.jpg"/>
     <ion-card-content>
-      <ion-card-title>
-        Nine Inch Nails Live
+      <ion-card-title (click)='inToNewDetail()'>
+        Update 7.00:  A New Journey
         </ion-card-title>
-      <p>
-        The most popular industrial group ever, and largely
-        responsible for bringing the music to a mass audience.
+      <p (click)='inToNewDetail()'>
+        Starting today, Monday December 12, Valve will launch
+        After ten years spent with the 6.xx version, from 2005 to 2016, Valve takes a huge step .....
       </p>
       <button ion-button (click)='changeStar()' color="danger" clear small>
         <ion-icon name="md-star-outline" *ngIf='star'> Like</ion-icon>
         <ion-icon name="md-star" *ngIf='!star'> Like</ion-icon>
         </button>
       <button ion-button color="danger" clear small><ion-icon name="share-alt"> Share</ion-icon></button>
-      <button ion-button color="danger" clear small><ion-icon name="md-glasses" item-right> Readmore</ion-icon></button>
+      <button ion-button color="danger" clear small  (click)='inToNewDetail()'><ion-icon name="md-glasses" item-right> Readmore</ion-icon></button>
     </ion-card-content>
   </ion-card>
 
-<ion-card [@flyInBottomSlow]="logoState" (click)='inToNewDetail()'>
-    <img src="assets/img/VP.jpg"/>
+<ion-card [@flyInBottomSlow]="logoState">
+    <img (click)='inToNewDetail()' src="assets/img/VP.jpg"/>
     <ion-card-content>
-      <ion-card-title>
+      <ion-card-title (click)='inToNewDetail()'>
         Nine Inch Nails Live
         </ion-card-title>
-      <p>
+      <p (click)='inToNewDetail()'>
         The most popular industrial group ever, and largely
         responsible for bringing the music to a mass audience.
       </p>
@@ -48,7 +48,7 @@
         <ion-icon name="md-star" *ngIf='!star'> Like</ion-icon>
         </button>
       <button ion-button color="danger" clear small><ion-icon name="share-alt"> Share</ion-icon></button>
-      <button ion-button color="danger" clear small><ion-icon name="md-glasses" item-right> Readmore</ion-icon></button>
+      <button ion-button color="danger" clear small  (click)='inToNewDetail()'><ion-icon name="md-glasses" item-right> Readmore</ion-icon></button>
     </ion-card-content>
   </ion-card>
 </ion-content>

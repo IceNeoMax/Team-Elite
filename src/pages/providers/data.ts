@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Storage } from '@ionic/storage';
+import { Team } from './team';
 @Injectable()
 export class Data {
 
@@ -16,7 +17,7 @@ export class Data {
 		});
 	}
 	getTeam(id){
-		return new Promise(resolve=>{
+		return new Promise<Team>(resolve=>{
 			this.http.get(`${this.baseUrl}/Teams/`+(id-1)+'.json')
 			.subscribe(res=> resolve(res.json()));
 		});
