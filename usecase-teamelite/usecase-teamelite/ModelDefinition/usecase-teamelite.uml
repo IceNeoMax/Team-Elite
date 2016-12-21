@@ -190,7 +190,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="8e06525a-4792-4dad-9c18-e3641aa76caf"
-              LastKnownName="See Teams Followed"
+              LastKnownName="Watch Teams Followed"
               LastKnownLocation="usecase-teamelite.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -354,7 +354,49 @@
         Id="2a15a45f-07b3-4a47-9b2e-81a3c924cc6b"
         name="Watch Top Teams"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="09ce9086-02a0-4ab3-b573-d728f374c35f"
+            isDerived="false"
+            sourceEndRoleName="Watch Top Teams"
+            targetEndRoleName="Watch A Team"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6252211b-017d-47d9-be03-53fb7e1f5562"
+              LastKnownName="Watch A Team"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fdd45c09-d552-4c2f-b6eb-1cd395b74c73"
+                  name="Watch Top Teams"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d18218df-77b3-4591-b56e-df1e9d5fef0c"
+                  name="Watch A Team"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -364,7 +406,7 @@
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="07248f77-6bb8-4a38-9682-8547441f4ab7">
+            Id="720567a9-a730-47db-a365-b612515ee3d8">
             <useCaseMoniker
               Id="2a15a45f-07b3-4a47-9b2e-81a3c924cc6b"
               LastKnownName="Watch Top Teams"
@@ -376,9 +418,51 @@
     <packageHasNamedElement>
       <useCase
         Id="8e06525a-4792-4dad-9c18-e3641aa76caf"
-        name="See Teams Followed"
+        name="Watch Teams Followed"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="19b48b02-ddd9-4b9a-ac28-e4df01ee2d7c"
+            isDerived="false"
+            sourceEndRoleName="Watch Teams Followed"
+            targetEndRoleName="Watch A Team"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3fc6c375-ef28-493d-b527-dbd836066bbe"
+              LastKnownName="Watch A Team"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="48b17300-5642-4839-90dd-6002b1ef22c5"
+                  name="Watch Teams Followed"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd0f29de-43ba-4336-8e41-dfc3ffef1291"
+                  name="Watch A Team"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -388,10 +472,10 @@
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="0db89222-465b-4cff-ae1b-2c6c354729bf">
+            Id="f11a012e-0586-4227-9678-2c6eccd3b79c">
             <useCaseMoniker
-              Id="8e06525a-4792-4dad-9c18-e3641aa76caf"
-              LastKnownName="See Teams Followed"
+              Id="3fc6c375-ef28-493d-b527-dbd836066bbe"
+              LastKnownName="Watch A Team"
               LastKnownLocation="usecase-teamelite.uml" />
           </extend>
         </extendedCases>
@@ -405,7 +489,31 @@
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="9f4c2ddb-e364-4451-8449-cd3f6d734550">
+            Id="feaf9424-7a84-4bc5-943b-4a6dcaf32ddb">
+            <useCaseMoniker
+              Id="6252211b-017d-47d9-be03-53fb7e1f5562"
+              LastKnownName="Watch A Team"
+              LastKnownLocation="usecase-teamelite.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6252211b-017d-47d9-be03-53fb7e1f5562"
+        name="Watch A Team"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ce874b86-ad4e-41e9-a13f-6efc60d0be74"
+        name="Unfollow"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="beef211d-ba1f-4a93-817f-39401a903ce9">
             <useCaseMoniker
               Id="2a15a45f-07b3-4a47-9b2e-81a3c924cc6b"
               LastKnownName="Watch Top Teams"
@@ -413,6 +521,13 @@
           </extend>
         </extendedCases>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3fc6c375-ef28-493d-b527-dbd836066bbe"
+        name="Watch A Team"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
