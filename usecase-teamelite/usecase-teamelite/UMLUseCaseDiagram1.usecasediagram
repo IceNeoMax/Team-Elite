@@ -126,6 +126,24 @@
     <useCaseModelRootHasTypes>
       <useCase Id="aac96064-da55-4c0f-bbab-933984109d33" name="Watch a Tounament" isAbstract="false" isLeaf="false">
         <elementDefinition Id="079f07d6-27f7-488b-a5eb-1bfc5d610006" />
+        <targetEnds>
+          <association Id="946ea45b-3846-4967-bd64-917dab1a9b06" isDerived="false" sourceEndRoleName="Watch a Tounament" targetEndRoleName="Watch A Team" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="db48b9d1-3581-42d8-b3a3-7dd67cf21291" LastKnownName="Watch A Team" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6c9ce84-9ee5-4693-b678-e5bf518c961c" name="Watch a Tounament" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2226198f-1ea3-422b-9162-4c37c24b0c9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="339835a0-9209-4ff9-b049-6b8d3b894920" name="Watch A Team" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ea6d6bb-50d4-46b4-a274-c481141916ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a2bae558-4a13-4b6d-a94a-a58f9177e9f4" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>

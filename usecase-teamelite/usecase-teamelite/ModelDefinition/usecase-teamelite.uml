@@ -347,7 +347,49 @@
         Id="079f07d6-27f7-488b-a5eb-1bfc5d610006"
         name="Watch a Tounament"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a2bae558-4a13-4b6d-a94a-a58f9177e9f4"
+            isDerived="false"
+            sourceEndRoleName="Watch a Tounament"
+            targetEndRoleName="Watch A Team"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6252211b-017d-47d9-be03-53fb7e1f5562"
+              LastKnownName="Watch A Team"
+              LastKnownLocation="usecase-teamelite.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2226198f-1ea3-422b-9162-4c37c24b0c9e"
+                  name="Watch a Tounament"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ea6d6bb-50d4-46b4-a274-c481141916ae"
+                  name="Watch A Team"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
